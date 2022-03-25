@@ -14,51 +14,8 @@ const Menu = ({ onMenuClick, logout }) => {
     return (
         <div>
             <MenuItemLink
-                to="/dashboard-edison"
-                primaryText="Edison"
-                leftIcon={<DashboardIcon />}
-                onClick={onMenuClick}
-                sidebarIsOpen={open}
-            />
-            <MenuItemLink
-                to="/dashboard-bronx"
-                primaryText="Bronx"
-                leftIcon={<DashboardIcon />}
-                onClick={onMenuClick}
-                sidebarIsOpen={open}
-            />
-            <MenuItemLink
-                to="/dashboard-ED50D"
-                primaryText="ED50D"
-                leftIcon={<DashboardIcon />}
-                onClick={onMenuClick}
-                sidebarIsOpen={open}
-            />
-            <MenuItemLink
-                to="/dashboard-invoice"
-                primaryText="Invoice Progress"
-                leftIcon={<DashboardIcon />}
-                onClick={onMenuClick}
-                sidebarIsOpen={open}
-            />
-            {resources.map(resource => (
-                <MenuItemLink
-                    key={resource.name}
-                    to={`/${resource.name}`}
-                    primaryText={
-                        (resource.options && resource.options.label) ||
-                        resource.name
-                    }
-                    leftIcon={
-                        resource.icon ? <resource.icon /> : <DefaultIcon />
-                    }
-                    onClick={onMenuClick}
-                    sidebarIsOpen={open}
-                />
-            ))}
-            <MenuItemLink
-                to="/confirm-scan"
-                primaryText="Scan Labels"
+                to="/freight-quote"
+                primaryText="Freight Quote"
                 leftIcon={<CropFreeIcon />}
                 onClick={onMenuClick}
                 sidebarIsOpen={open}
